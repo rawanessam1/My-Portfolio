@@ -237,7 +237,8 @@
       box-shadow: var(--shadow);
     }
     .contact .panel .row {
-      font-size: 17px;    
+      font-size: 17px;
+      grid-template-columns: 1fr 1fr 1fr;    
     }
     .contact .panel .row i {
       color: var(--primary-2);
@@ -258,3 +259,45 @@
         grid-template-columns: 1fr;
       }
     }
+
+
+
+
+
+    /* Mobile responsiveness */
+@media (max-width: 768px) {
+  .welcome-grid {
+    grid-template-columns: 1fr; /* Stack columns */
+    text-align: center; /* Center text for better UX */
+  }
+
+  .welcome-grid .portrait {
+    display: flex;
+    justify-content: center;
+  }
+
+  .section-title {
+    font-size: 1.8rem; /* Reduce heading size */
+  }
+
+  .section-lead {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .btn {
+    font-size: 1rem;
+    padding: 0.6rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 1.6rem;
+  }
+
+  .btn {
+    width: 100%; /* Full width button on very small screens */
+    justify-content: center;
+  }
+}
