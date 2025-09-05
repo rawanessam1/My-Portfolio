@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-commerce Project (MoDance) – Case Study | Rawan Essam</title>
+  <meta name="description" content="Case study of MoDance E-commerce front-end project. Built using HTML, CSS, JavaScript, Bootstrap, and an external API.">
+  <style>
+    :root {
+      --bg: #0b0b1a;
+      --panel: #16142a;
+      --text: #e9e5ff;
+      --muted: #b3a0d0;
+      --primary: #9b5de5;
+      --primary-2: #be95ff;
+      --shadow: 0 10px 30px rgba(20,10,40,.3);
+      --radius: 18px;
+      --maxw: 900px;
+    }
+    body {
+      margin: 0;
+      font-family: system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    .container {
+      width: min(100% - 2rem, var(--maxw));
+      margin: 2rem auto;
+    }
+    h1, h2 {
+      color: var(--primary);
+      margin-bottom: .5rem;
+    }
+    .btn {
+      display: inline-block;
+      padding: .7rem 1.2rem;
+      margin-top: 1rem;
+      border-radius: 10px;
+      background: linear-gradient(145deg, var(--primary), var(--primary-2));
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      opacity: 0.9;
+    }
+    .section {
+      background: var(--panel);
+      padding: 1.5rem;
+      border-radius: var(--radius);
+      margin-bottom: 1.5rem;
+      box-shadow: var(--shadow);
+    }
+    .screenshoots {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+}
+
+.screenshoots img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+  cursor: zoom-in;
+}
+
+.screenshoots img:hover {
+  transform: scale(1.05);
+}
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      padding: 1rem;
+      margin-top: 2rem;
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+    /* Table Styling */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+    th, td {
+      border: 1px solid rgba(255,255,255,0.1);
+      padding: .8rem;
+      text-align: left;
+    }
+    th {
+      background: rgba(255,255,255,0.05);
+      color: var(--primary-2);
+    }
+    @media (max-width: 600px) {
+      table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>E-commerce Frontend Project (MoDance)</h1>
+
+    <div class="section">
+      <h2>Overview</h2>
+      <p class="muted">A responsive e-commerce frontend built with HTML, CSS, JavaScript, and Bootstrap, integrated with a live API for real product data.</p>
+    </div>
+
+    <div class="section">
+      <h2>Features</h2>
+      <ul>
+        <li>User authentication (login, register, forget password, reset password, OTP)</li>
+        <li>Product listing and product details pages</li>
+        <li>Shopping cart and checkout process</li>
+        <li>View past orders</li>
+        <li>Responsive design using Bootstrap</li>
+        <li>Integrated with a live E-commerce API for dynamic data</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Tech Stack</h2>
+      <ul>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+        <li>Bootstrap 5</li>
+        <li>External E-commerce API</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Screenshots</h2>
+      <div class="screenshoots">
+      <img src="images/modance.png" alt="MoDance E-commerce Website Screenshot">
+      <img src="images/modance1.png" alt="MoDance E-commerce Website Screenshot">
+      <img src="images/modance2.png" alt="MoDance E-commerce Website Screenshot">
+      <img src="images/modance3.png" alt="MoDance E-commerce Website Screenshot">
+      <img src="images/modance4.png" alt="MoDance E-commerce Website Screenshot">
+      <img src="images/modance5.png" alt="MoDance E-commerce Website Screenshot">
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Contributors</h2>
+      <table>
+        <tr>
+          <th>Name</th>
+          <th>Work</th>
+        </tr>
+        <tr>
+          <td>Rawan</td>
+          <td>Home page (index.html), product details page (product.html), footer</td>
+        </tr>
+        <tr>
+          <td>Fatma</td>
+          <td>Products page (products.html) and related JavaScript & CSS</td>
+        </tr>
+        <tr>
+          <td>Aliaa</td>
+          <td>Login & register pages, cart, checkout, orders, authentication logic, header</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="section">
+      <h2>GitHub Repository</h2>
+      <a href="https://github.com/Aliaa-mohamed47/E-commerce.git" class="btn" target="_blank">View on GitHub</a>
+      <a href="https://aliaa-mohamed47.github.io/E-commerce/" class="btn" target="_blank">Live Demo</a>
+    </div>
+  </div>
+
+  <footer>© <span id="y"></span> Rawan Essam. All rights reserved.</footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
