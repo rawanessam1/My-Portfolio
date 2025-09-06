@@ -18,6 +18,7 @@
       color: var(--text);
       line-height: 1.6;
       scroll-behavior: smooth;
+      font-size: 17px;
     }
 
     .container {
@@ -46,6 +47,7 @@
       gap: .6rem;
       font-weight: 700;
       font-size: 1.2rem;
+      color: #9b5de5;
     }
     .nav ul {
       display: flex;
@@ -238,7 +240,12 @@
     }
     .contact .panel .row {
       font-size: 17px;
-      grid-template-columns: 1fr 1fr 1fr;    
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;    
+    }
+    .contact .panel .row .btn{
+      min-width: 10%;  
     }
     .contact .panel .row i {
       color: var(--primary-2);
@@ -286,6 +293,10 @@
   }
 
   .btn {
+    font-size: 1rem;
+    padding: 0.6rem 1rem;
+  }
+  .nav ul{
     font-size: 1rem;
     padding: 0.6rem 1rem;
   }
