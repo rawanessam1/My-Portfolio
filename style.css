@@ -164,6 +164,7 @@ header {
   transform: translateY(15px);
   animation: fadeUp 1s forwards;
   animation-delay: 0.5s;
+  text-align: center;
 }
 
 .hero-cta {
